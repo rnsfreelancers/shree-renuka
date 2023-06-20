@@ -1,9 +1,7 @@
 import { Routes, Route } from "react-router-dom";
-// import HomePage from "./pages/HomePage";
 import HomePage from "./pages/HomePage";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-//import Policy from "./pages/Policy";
 import Pagenotfound from "./pages/Pagenotfound";
 import Register from "./pages/Auth/Register";
 import Login from "./pages/Auth/Login";
@@ -24,7 +22,7 @@ import ProductDetails from "./pages/ProductDetails";
 import Categories from "./pages/Categories";
 import CategoryProduct from "./pages/CategoryProduct";
 import CartPage from "./pages/CartPage";
-//import TermsOfService from "./components/Layout/TermsOfService";
+import TermsOfService from "./components/Layout/TermsOfService";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import News from "./pages/News";
 import CustomerSupport from "./pages/CustomerSupport";
@@ -56,8 +54,7 @@ function App() {
         <Route path="/forgot-password" element={<ForgotPasssword />} />
         <Route path="/login" element={<Login />} />
         <Route path="/contact" element={<Contact />} />
-        {/* <Route path="/policy" element={<Policy />} /> */}
-        {/* <Route path="/termOfService" element={<TermsOfService />} /> */}
+        <Route path="/termOfService" element={<TermsOfService />} />
         <Route path="/about" element={<About />} />
         <Route path="/privacyPolicy" element={<PrivacyPolicy/>} />
         <Route path="/customerSupport" element={<CustomerSupport/>} />

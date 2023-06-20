@@ -20,7 +20,7 @@ const CustomFooter = () => {
           </p>
           <p className="para">
             <NavLink to="/news" className="nav-link">
-              In the News
+              Certificates
             </NavLink>
           </p>
         </div>
@@ -54,8 +54,8 @@ const CustomFooter = () => {
         <div className="column">
           <h6 className="address">BUSINESS ENQUIRY </h6>
           <p className="address-i">
-            For enquiries contact: <br></br> Email: sales@vashiisl.com <br></br>{" "}
-            Phone No. 1800-2661658
+            For enquiries contact: <br></br> Email: shreerenuka.glb@gmail.com <br></br>{" "}
+            Phone No. +91 73539 18133
           </p>
         </div>
 
@@ -115,7 +115,7 @@ const CustomFooter = () => {
               Terms of Service
             </NavLink>
           </p>
-          <p>Copyright Â© 2023 Shree Renuka</p>
+          <p>Copyright © 2023 Shree Renuka</p>
           <p>GST NO : 29AF0PD1054L1Z9</p>
         </div>
       </footer>

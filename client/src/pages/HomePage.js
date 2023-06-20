@@ -117,7 +117,7 @@ const HomePage = () => {
   ));
 
   const containerStyles = {
-    width: "100%",
+    width: "1280px",
     height: "250px",
     margin: "0 auto",
   };
@@ -168,7 +168,7 @@ const HomePage = () => {
   );
 
   return (
-    <Layout title={"ALl Products - Best offers "}>
+    <Layout>
       <div style={{ height: "2em" }}></div>
       <div style={containerStyles}>
         <ImageSlider slides={slides} />

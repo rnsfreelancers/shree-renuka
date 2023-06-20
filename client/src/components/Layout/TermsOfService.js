@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "./Layout";
-import "../assests/styles/TermsOfService.css"
+import "../../assests/styles/TermsOfService.css"
 
 const TermsOfService = () => {
   return (
