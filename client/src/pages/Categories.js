@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Layout from "./../components/Layout/Layout";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
-import { Checkbox, Radio, Select } from "antd";
+import { Checkbox, Radio, Select, Pagination } from "antd";
 import { Prices } from "../components/Prices";
 import { useCart } from "../context/cart";
 import { Brand } from "../components/Filter/Brand";
@@ -53,21 +53,8 @@ const Categories = () => {
 
   useEffect(() => {
     if (page === 1) return;
-    loadMore();
+    getAllProducts();
   }, [page]);
-
-  // Load more products
-  const loadMore = async () => {
-    try {
-      setLoading(true);
-      const { data } = await axios.get(`/api/v1/product/product-list/${page}`);
-      setLoading(false);
-      setProducts([...products, ...data?.products]);
-    } catch (error) {
-      console.log(error);
-      setLoading(false);
-    }
-  };
 
   // Filter by category
   const handleCategoryChange = (value) => {
@@ -104,6 +91,7 @@ const Categories = () => {
       console.log(error);
     }
   };
+  
   // Get all products or products by category
   const getAllProducts = async () => {
     try {
@@ -127,6 +115,10 @@ const Categories = () => {
       navigate(`/product/${slug}`);
     }
   }, [selectedCategory, page, slug]);
+
+  const handlePageChange = (newPage) => {
+    setPage(newPage);
+  };
 
   return (
     <Layout title={"All Products - Best offers"}>
@@ -195,17 +187,14 @@ const Categories = () => {
               </div>
             ))}
           </div>
-          <div className="m-2 p-3">
-            {products && products.length < total && (
-              <button
-                className="btn btn-warning"
-                onClick={() => {
-                  setPage(page + 1);
-                }}
-              >
-                {loading ? "Loading..." : "Load More"}
-              </button>
-            )}
+          <div className="pagination-container">
+            <Pagination
+              current={page}
+              total={total}
+              pageSize={10} // this cannot be changed pagesize can be changed in productController.js 
+              onChange={handlePageChange}
+              showSizeChanger={false}
+            />
           </div>
         </div>
       </div>
