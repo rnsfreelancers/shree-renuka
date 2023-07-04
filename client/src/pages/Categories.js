@@ -91,7 +91,7 @@ const Categories = () => {
       console.log(error);
     }
   };
-  
+
   // Get all products or products by category
   const getAllProducts = async () => {
     try {
@@ -99,7 +99,7 @@ const Categories = () => {
       const url = selectedCategory
         ? `/api/v1/product/products-by-category/${selectedCategory}/${page}`
         : `/api/v1/product/product-list/${page}`;
-  
+
       const { data } = await axios.get(url);
       setLoading(false);
       setProducts(data.products);
@@ -156,17 +156,22 @@ const Categories = () => {
           <h1 className="text-center product-text">All Products</h1>
           <div className="d-flex flex-wrap products-container">
             {products?.map((p) => (
-              <div className="card m-2 product-card" key={p._id} onClick={() => navigate(`/product/${p.slug}`)}>
+              <div
+                className="card m-2 product-card"
+                key={p._id}
+                onClick={() => navigate(`/product/${p.slug}`)}
+              >
                 <img
                   src={`/api/v1/product/product-photo/${p._id}`}
                   className="card-img-top"
                   alt={p.name}
                 />
                 <div className="card-body">
-                  <h5 className="card-title">{p.name}</h5>
                   <p className="card-text">
                     {p.description.substring(0, 30)}...
                   </p>
+                  <h5 className="card-title">{p.name}</h5>
+
                   <h3>{p.size}</h3>
                   <div className="card-buttons">
                     <button
@@ -191,7 +196,7 @@ const Categories = () => {
             <Pagination
               current={page}
               total={total}
-              pageSize={10} // this cannot be changed pagesize can be changed in productController.js 
+              pageSize={10} // this cannot be changed pagesize can be changed in productController.js
               onChange={handlePageChange}
               showSizeChanger={false}
             />
