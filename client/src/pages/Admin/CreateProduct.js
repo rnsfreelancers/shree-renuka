@@ -150,7 +150,7 @@ const CreateProduct = () => {
                 <input
                   type="text"
                   value={brand}
-                  placeholder="write a des1"
+                  placeholder="Conductor: "
                   className="form-control"
                   onChange={(e) => setdes1(e.target.value)}
                 />
@@ -159,7 +159,7 @@ const CreateProduct = () => {
                 <input
                   type="text"
                   value={des2}
-                  placeholder="write a des1"
+                  placeholder="Core: "
                   className="form-control"
                   onChange={(e) => setdes2(e.target.value)}
                 />
@@ -168,7 +168,7 @@ const CreateProduct = () => {
                 <input
                   type="text"
                   value={des3}
-                  placeholder="write a des1"
+                  placeholder="Sq. mm:"
                   className="form-control"
                   onChange={(e) => setdes3(e.target.value)}
                 />
@@ -177,7 +177,7 @@ const CreateProduct = () => {
                 <input
                   type="text"
                   value={des4}
-                  placeholder="write a des1"
+                  placeholder="Type:"
                   className="form-control"
                   onChange={(e) => setdes4(e.target.value)}
                 />
@@ -186,7 +186,7 @@ const CreateProduct = () => {
                 <input
                   type="text"
                   value={des5}
-                  placeholder="write a des1"
+                  placeholder="Voltage: "
                   className="form-control"
                   onChange={(e) => setdes5(e.target.value)}
                 />
