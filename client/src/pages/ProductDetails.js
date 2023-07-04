@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import Layout from "./../components/Layout/Layout";
 import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
-import { useCart } from "../context/cart";
-import toast from "react-hot-toast";
 import Invoice from "./../assests/invoice.svg"
 import ReturnIc from "./../assests/Return-Icon.png"
 import OIP from "./../assests/OIP.jpg"
@@ -12,7 +10,6 @@ const ProductDetails = () => {
   const params = useParams();
   const navigate = useNavigate();
   const [product, setProduct] = useState({});
-  const [cart, setCart] = useCart();
   const [relatedProducts, setRelatedProducts] = useState([]);
 
   //initalp details
@@ -87,35 +84,25 @@ const ProductDetails = () => {
         )}
         <div className="d-flex flex-wrap">
           {relatedProducts?.map((p) => (
-            <div className="card m-2 product-card" key={p._id} onClick={() => navigate(`/product/${p.slug}`)}>
-                <img
-                  src={`/api/v1/product/product-photo/${p._id}`}
-                  className="card-img-top"
-                  alt={p.name}
-                />
-                <div className="card-body">
-                  <p className="card-text">
-                    {p.description.substring(0, 30)}...
-                  </p>
-                  <h5 className="card-title">{p.name}</h5>
-                  <h3>{p.size}</h3>
-                  <div className="card-buttons">
-                    <button
-                      className="btn btn-secondary"
-                      onClick={() => {
-                        setCart([...cart, p]);
-                        localStorage.setItem(
-                          "cart",
-                          JSON.stringify([...cart, p])
-                        );
-                        toast.success("Item Added to cart");
-                      }}
-                    >
-                      ADD TO CART
-                    </button>
-                  </div>
-                </div>
+            <div className="card m-2" style={{ width: "18rem" }}>
+              <img
+                src={`/api/v1/product/product-photo/${p?._id}`}
+                className="card-img-top"
+                alt={p.name}
+              />
+              <div className="card-body">
+                <h5 className="card-title">{p.name}</h5>
+                <p className="card-text">{p.description.substring(0, 30)}...</p>
+                <p className="card-text"> $ {p.price}</p>
+                <button
+                  className="btn btn-primary ms-1"
+                  onClick={() => navigate(`/product/${p.slug}`)}
+                >
+                  More Details
+                </button>
+                <button class="btn btn-secondary ms-1">ADD TO CART</button>
               </div>
+            </div>
           ))}
         </div>
       </div>

@@ -44,16 +44,13 @@
   }
   
   .product-card .card-title {
-    font-size: 14px;
-    text-align: left;
+    font-size: 20px;
     font-weight: 600;
     margin-top: 10px;
   }
   
   .product-card .card-text {
-    text-align: left;
     margin-top: 5px;
-    font-weight: 500;
     height: 60px;
     overflow: hidden;
     text-overflow: ellipsis;
