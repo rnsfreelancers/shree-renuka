@@ -7,9 +7,9 @@ const PrivacyPolicy = () => {
     <Layout>
     <div className="privacy-policy-container">
         <h1 className="privacy-policy-title">PRIVACY POLICY</h1>
-        <p>Last updated: [Date]</p>
+        <p>Last updated: 11-06-2023</p>
         <p className="privacy-policy-text">
-          [Your Company Name] ("us", "we", or "our") operates [your website URL] (the "Site"). This page informs you of our policies regarding the collection, use, and disclosure of Personal Information we receive from users of the Site.
+          Shree Renuka Engineering ("us", "we", or "our") operates www.shreereukaEngg.com (the "Site"). This page informs you of our policies regarding the collection, use, and disclosure of Personal Information we receive from users of the Site.
         </p>
         <p>
           We use your Personal Information only for providing and improving the Site. By using the Site, you agree to the collection and use of information in accordance with this policy.
@@ -32,7 +32,7 @@ const PrivacyPolicy = () => {
         </p>
         <h2 className='info'>Changes to This Privacy Policy</h2>
         <p>
-          This Privacy Policy is effective as of [Date] and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page. We reserve the right to update or change our Privacy Policy at any time, and you should check this Privacy Policy periodically. Your continued use of the Site after we post any modifications to the Privacy Policy on this page will constitute your acknowledgment of the modifications and your consent to abide and be bound by the modified Privacy Policy.
+          This Privacy Policy is effective as of 11-06-2023 and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page. We reserve the right to update or change our Privacy Policy at any time, and you should check this Privacy Policy periodically. Your continued use of the Site after we post any modifications to the Privacy Policy on this page will constitute your acknowledgment of the modifications and your consent to abide and be bound by the modified Privacy Policy.
         </p>
         <h2 className='info'>Contact Us</h2>
         <p>

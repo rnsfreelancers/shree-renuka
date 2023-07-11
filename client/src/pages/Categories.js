@@ -141,8 +141,6 @@ const Categories = () => {
             ))}
           </div>
           <hr></hr>
-          <label className="text-center category-filter-heading">Brand</label>
-          <Brand />
           <div className="d-flex flex-column">
             <button
               className="btn btn-danger"
@@ -167,11 +165,10 @@ const Categories = () => {
                   alt={p.name}
                 />
                 <div className="card-body">
+                  <h5 className="card-title">{p.name}</h5>
                   <p className="card-text">
                     {p.description.substring(0, 30)}...
                   </p>
-                  <h5 className="card-title">{p.name}</h5>
-
                   <h3>{p.size}</h3>
                   <div className="card-buttons">
                     <button
