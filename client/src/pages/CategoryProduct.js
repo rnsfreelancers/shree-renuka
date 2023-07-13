@@ -150,7 +150,7 @@ const CategoryProduct = () => {
             <h6 className="text-center">{products?.length} result found</h6>
             <div className="row">
               <div className="col-md-9 offset-1">
-                <div className="d-flex flex-wrap products-container">
+                <div className="d-flex flex-wrap new-products-container">
                   {products?.map((p) => (
                     <div
                       className="card m-2 new-product-card clickable-pointer"
@@ -163,7 +163,7 @@ const CategoryProduct = () => {
                         alt={p.name}
                       />
                       <div className="card-body">
-                        <h5>{p.name}</h5>
+                        <h5 className="card-title">{p.name}</h5>
                         <p className="card-text">
                           {p.description.substring(0, 30)}...
                         </p>

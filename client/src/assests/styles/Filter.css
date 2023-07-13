@@ -1,107 +1,114 @@
 .filter-container {
-    width: 15rem;
-    padding: 2rem 1rem 6rem 1rem;
-    position: fixed;
-    margin-top: 5rem;
-    overflow: auto;
-    height: 100vh;
+  width: 15rem;
+  padding: 2rem 1rem 6rem 1rem;
+  position: fixed;
+  margin-top: 5rem;
+  overflow: auto;
+  height: 100vh;
 }
 .category-filter-box {
-    border: 1px solid #acaaaa;
-    border-radius: 4px;
-    padding: 10px;
-    margin-bottom: 5px;
-    margin-left: 27px;
-    margin-top: 33px;
-    width: 160px;
-    height: 800px;
-    display: flex;
+  border: 1px solid #acaaaa;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-left: 27px;
+  margin-top: 33px;
+  width: 160px;
+  height: 800px;
+  display: flex;
   flex-direction: column;
-  }
+}
 
-  .category-filter-heading {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-  }
-  
+.category-filter-heading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
 
 .filters {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 .category-title {
-    border-bottom: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .category-select {
-    margin-top: .5rem;
-    display: block;
+  margin-top: 0.5rem;
+  display: block;
 }
 
 .input {
-    width: 1.25rem;
-    height: 1.25rem;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .gap-10px {
-    gap: 10px;
+  gap: 10px;
+}
+
+.new-products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 900px;
 }
 
 .new-product-card {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 10px;
-    flex-basis: calc(30% - 20px);
-    text-align: center;
-    margin: 15px;
-    cursor: pointer;
-    position: relative;
-  }
-  
-  .new-product-card .card-img-top {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 4px;
-  }
-  
-  .new-product-card .card-title {
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: 10px;
-  }
-  
-  .new-product-card .card-text {
-    margin-top: 5px;
-    height: 60px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  
-  .new-product-card .card-buttons {
-    display: none;
-  }
-  
-  .new-product-card:hover .card-buttons {
-    display: flex;
-    justify-content: space-between;
-    position: absolute; /* Add position absolute */
-    bottom: 10px; /* Adjust the desired vertical position */
-    left: 0; /* Adjust the desired horizontal position */
-    width: 100%;
-  }
-  
-  .new-product-card .card-buttons button {
-    width: 100%;
-    margin-top: 10px;
-    background-color: #bbb; /* Set the desired gray color */
-    color: #fff; /* Set the text color to white */
-    border: none; /* Remove the border */
-  }
-  
-  .new-product-card .card-buttons button:hover {
-    background-color: #888; /* Set the desired hover color */
-  }
-  
-  
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  flex-basis: calc(25% - 20px);
+  text-align: center;
+  margin: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.new-product-card .card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.new-product-card .card-title {
+  font-size: 14px;
+  text-align: left;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.new-product-card .card-text {
+  text-align: left;
+  margin-top: 5px;
+  font-weight: 500;
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.new-product-card .card-buttons {
+  display: none;
+}
+
+.new-product-card:hover .card-buttons {
+  display: flex;
+  justify-content: space-between;
+  position: absolute; /* Add position absolute */
+  bottom: 10px; /* Adjust the desired vertical position */
+  left: 0; /* Adjust the desired horizontal position */
+  width: 100%;
+}
+
+.new-product-card .card-buttons button {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #bbb; /* Set the desired gray color */
+  color: #fff; /* Set the text color to white */
+  border: none; /* Remove the border */
+}
+
+.new-product-card .card-buttons button:hover {
+  background-color: #888; /* Set the desired hover color */
+}
