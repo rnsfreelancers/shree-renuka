@@ -46,10 +46,6 @@ const HomePage = () => {
       title: "second image",
     },
     {
-      url: finolexslide,
-      title: "third image",
-    },
-    {
       url: polycabwires,
       title: "fourth image",
     },
