@@ -16,10 +16,7 @@ connectDB();
 //rest object
 const app = express();
 
-//middelwares
- app.use(cors());
-app.use(express.json());
-app.use(morgan("dev"));
+
 
 
 app.use(express.static("client"));
@@ -33,6 +30,11 @@ app.get("/", (req, res) => {
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/category", categoryRoutes);
 app.use("/api/v1/product", productRoutes);
+
+//middelwares
+app.use(cors());
+app.use(express.json());
+app.use(morgan("dev"));
 
 //PORT
 const PORT = process.env.PORT || 3000;
