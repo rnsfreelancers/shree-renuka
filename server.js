@@ -31,7 +31,7 @@ app.use("/api/v1/product", productRoutes);
 //static files
 //rest api
 app.get("/", (req, res) => {
-  res.send("./client/build");
+  res.sendFile("./client/build/index.html");
 });
 
 //PORT
