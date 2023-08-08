@@ -24,15 +24,15 @@ app.use(morgan("dev"));
 
 app.use(express.static("client"));
 
-//routes
-app.use("/api/v1/auth", authRoutes);
-app.use("/api/v1/category", categoryRoutes);
-app.use("/api/v1/product", productRoutes);
-
 //rest api
 app.get("/", (req, res) => {
   res.send("<h1>Welcome to ecommerce app</h1>");
 });
+
+//routes
+app.use("/api/v1/auth", authRoutes);
+app.use("/api/v1/category", categoryRoutes);
+app.use("/api/v1/product", productRoutes);
 
 //PORT
 const PORT = process.env.PORT || 3000;
