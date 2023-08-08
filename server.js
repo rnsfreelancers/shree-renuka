@@ -22,7 +22,7 @@ app.use(express.json());
 app.use(morgan("dev"));
 
 
-app.use(express.static("client/build"));
+app.use(express.static("client"));
 
 //routes
 app.use("/api/v1/auth", authRoutes);
