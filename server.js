@@ -16,7 +16,7 @@ connectDB();
 //rest object
 const app = express();
 
-app.use(express.static("client"));
+app.use(express.static("client/build"));
 
 //middelwares
 app.use(cors());
