@@ -9,6 +9,9 @@ import cors from "cors";
 import path from 'path';
 import { fileURLToPath } from 'url';
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 //configure env
 dotenv.config();
 
@@ -36,9 +39,6 @@ app.use(express.static(path.join(__dirname, "client/build")));
 app.get("*", function (req, res) {
   res.sendFile(path.join(__dirname, "client/build/index.html"));
 });
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 //rest api
 
