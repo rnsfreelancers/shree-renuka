@@ -1,6 +1,6 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Layout from "./../components/Layout/Layout";
-import ImageSlider from "./ImageSlider";
+import ImageSlider from "./ImageSlider.js"
 import abb from "../assests/abb-logo.png";
 import reliance from "../assests/relianceltd-logo.png";
 import bajaj from "../assests/bajaj-logo.png";
@@ -40,6 +40,18 @@ import "../styles/HomePage.css";
 import { Link } from "react-router-dom";
 
 const HomePage = () => {
+
+  const [sliderWidth, setSliderWidth] = useState("1000px");
+
+  useEffect(() => {
+    // Update the slider width based on the screen size
+    if (window.innerWidth <= 767) {
+      setSliderWidth("100%"); // Use full width
+    } else {
+      setSliderWidth("1000px"); // Use a fixed width
+    }
+  }, []);
+
   const slides = [
     {
       url: landtslide,
@@ -113,8 +125,8 @@ const HomePage = () => {
   ));
 
   const containerStyles = {
-    width: "1280px",
-    height: "250px",
+    width: "100%", // Adjust as needed
+    height: "250px", // Fixed height for the container
     margin: "0 auto",
   };
 

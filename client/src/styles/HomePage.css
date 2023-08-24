@@ -183,3 +183,43 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Add this media query for screens up to 767px wide (tablets and smaller) */
+@media screen and (max-width: 400px) {
+  .image-slider-container {
+    width: 100%; /* Use full width */
+    height: auto; /* Auto height */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .category-grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Display 2 columns */
+    grid-gap: 0.5em; /* Reduce the gap between items */
+  }
+
+  .category-image {
+    width: 80px; /* Adjust image size */
+    height: 80px;
+  }
+
+  .categories-heading,
+  .category-title,
+  .grid-authorized-item .title {
+    font-size: 1em; /* Reduce font size */
+  }
+
+  .grid-authorized-item {
+    width: 120px; /* Adjust item width */
+    height: 150px; /* Adjust item height */
+  }
+
+  /* Update happy customers grid to display 1 column */
+  .happy-customers-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .happy-customer-box {
+    width: 80%; /* Adjust box width */
+  }
+}
