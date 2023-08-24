@@ -182,7 +182,7 @@ const HomePage = () => {
         <ImageSlider slides={slides} />
       </div>
       <div style={{ marginTop: "4em" }}>
-        <h2 className="categories-heading">CATEGORIES TO SHOPP</h2>
+        <h2 className="categories-heading">CATEGORIES TO SHOPPP</h2>
       </div>
       <div style={{ marginTop: "3em" }} className="category-grid-container">
         {categoryGridItems}

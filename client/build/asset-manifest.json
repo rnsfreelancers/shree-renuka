@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9e9b77c5.css",
-    "main.js": "/static/js/main.6e1f2bfd.js",
+    "main.css": "/static/css/main.ce84620b.css",
+    "main.js": "/static/js/main.9e99639f.js",
     "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
     "static/media/abb-switchgear.png": "/static/media/abb-switchgear.ff44b97be985aa943bf1.png",
@@ -39,12 +39,12 @@
     "static/media/invoice.svg": "/static/media/invoice.78e1f688195414106c7c53675914cf3a.svg",
     "index.html": "/index.html",
     "static/media/cart4.svg": "/static/media/cart4.fe58a027c408a1e031a71b980b344375.svg",
-    "main.9e9b77c5.css.map": "/static/css/main.9e9b77c5.css.map",
-    "main.6e1f2bfd.js.map": "/static/js/main.6e1f2bfd.js.map",
+    "main.ce84620b.css.map": "/static/css/main.ce84620b.css.map",
+    "main.9e99639f.js.map": "/static/js/main.9e99639f.js.map",
     "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e9b77c5.css",
-    "static/js/main.6e1f2bfd.js"
+    "static/css/main.ce84620b.css",
+    "static/js/main.9e99639f.js"
   ]
 }
